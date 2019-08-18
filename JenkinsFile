@@ -1,15 +1,14 @@
 
 pipeline{
-  agent any{
+  agent any
           stages{
             stage('One'){
-            echo 'Hi, this is test demo'
+           steps{ echo 'Hi, this is test demo'}
             
             }
              stage('Two'){
-           input('Do you want to proceed?')
+          steps{ input('Do you want to proceed?')}
            }
             
-          }
           }
           }
